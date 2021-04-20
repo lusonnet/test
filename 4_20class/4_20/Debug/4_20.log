@@ -1,0 +1,4 @@
+﻿  test.cpp
+D:\shiyanpin\3.5C\4_20\4_20\test.cpp(20,7): warning C4101: “p”: 未引用的局部变量
+D:\shiyanpin\3.5C\4_20\4_20\test.cpp(20,13): warning C4101: “q”: 未引用的局部变量
+  4_20.vcxproj -> D:\shiyanpin\3.5C\4_20\Debug\4_20.exe

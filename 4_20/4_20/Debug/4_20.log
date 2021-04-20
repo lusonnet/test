@@ -1,0 +1,19 @@
+﻿  test.cpp
+D:\shiyanpin\bit\4_20\4_20\test.cpp(65,6): error C2369: “arr”: 重定义；不同的下标
+D:\shiyanpin\bit\4_20\4_20\test.cpp(63): message : 参见“arr”的声明
+D:\shiyanpin\bit\4_20\4_20\test.cpp(68,18): error C2440: “初始化”: 无法从“const char [4]”转换为“char”
+D:\shiyanpin\bit\4_20\4_20\test.cpp(68,11): message : 没有使该转换得以执行的上下文
+D:\shiyanpin\bit\4_20\4_20\test.cpp(69,27): error C2440: “初始化”: 无法从“initializer list”转换为“char”
+D:\shiyanpin\bit\4_20\4_20\test.cpp(69,13): message : 初始值设定项包含过多元素
+D:\shiyanpin\bit\4_20\4_20\test.cpp(70,27): error C2664: “size_t strlen(const char *)”: 无法将参数 1 从“char”转换为“const char *”
+D:\shiyanpin\bit\4_20\4_20\test.cpp(70,24): message : 从整型强制转换为指针类型要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\string.h(215,16): message : 参见“strlen”的声明
+D:\shiyanpin\bit\4_20\4_20\test.cpp(70,9): warning C4473: “printf”: 没有为格式字符串传递足够的参数
+D:\shiyanpin\bit\4_20\4_20\test.cpp(70,9): message : 占位符和其参数预计 1 可变参数，但提供的却是 0 参数
+D:\shiyanpin\bit\4_20\4_20\test.cpp(70,9): message : 缺失的可变参数 1 为格式字符串“%d”所需
+D:\shiyanpin\bit\4_20\4_20\test.cpp(71,27): error C2664: “size_t strlen(const char *)”: 无法将参数 1 从“char”转换为“const char *”
+D:\shiyanpin\bit\4_20\4_20\test.cpp(71,24): message : 从整型强制转换为指针类型要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\string.h(215,16): message : 参见“strlen”的声明
+D:\shiyanpin\bit\4_20\4_20\test.cpp(71,9): warning C4473: “printf”: 没有为格式字符串传递足够的参数
+D:\shiyanpin\bit\4_20\4_20\test.cpp(71,9): message : 占位符和其参数预计 1 可变参数，但提供的却是 0 参数
+D:\shiyanpin\bit\4_20\4_20\test.cpp(71,9): message : 缺失的可变参数 1 为格式字符串“%d”所需
