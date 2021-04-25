@@ -1,0 +1,2 @@
+﻿  tsst.cpp
+D:\shiyanpin\class\4_25\4_25\tsst.cpp(151): error C4700: 使用了未初始化的局部变量“i”
