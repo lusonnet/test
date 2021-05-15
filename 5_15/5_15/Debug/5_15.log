@@ -1,0 +1,7 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(519,5): warning MSB8028: 中间目录(Debug\)包含从另一个项目(5_15.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  test.c
+D:\git\test\5_15\5_15\test.c(90,1): warning C4047: “初始化”:“char *”与“char **”的间接级别不同
+D:\git\test\5_15\5_15\test.c(105,13): warning C4013: “gets”未定义；假设外部返回 int
+D:\git\test\5_15\5_15\test.c(108,13): warning C4047: “函数”:“char **”与“char [101]”的间接级别不同
+D:\git\test\5_15\5_15\test.c(108,12): warning C4024: “exchange”: 形参和实参 1 的类型不同
+  5_15.vcxproj -> D:\git\test\5_15\Debug\5_15(1).exe
