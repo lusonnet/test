@@ -1,0 +1,6 @@
+﻿  test.c
+D:\git\test\5_29\5_29\test.c(16): warning C4716: “Mul”: 必须返回一个值
+D:\git\test\5_29\5_29\test.c(12): warning C4716: “Sub”: 必须返回一个值
+D:\git\test\5_29\5_29\test.c(7): warning C4716: “Add”: 必须返回一个值
+D:\git\test\5_29\5_29\test.c(20): warning C4716: “Div”: 必须返回一个值
+  5_29.vcxproj -> D:\git\test\5_29\Debug\5_29.exe
