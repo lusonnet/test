@@ -1,0 +1,4 @@
+﻿  test.c
+D:\git\test\5_30\5_30\test.c(26,10): warning C4098: “test1”:“void”函数返回值
+D:\git\test\5_30\5_30\test.c(51,13): warning C4133: “函数”: 从“Stu [3]”到“int *”的类型不兼容
+  5_30.vcxproj -> D:\git\test\5_30\Debug\5_30.exe
