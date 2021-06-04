@@ -1,0 +1,4 @@
+﻿  test.c
+D:\git\test\6_4\6_4\test.c(20,7): warning C4013: “gets”未定义；假设外部返回 int
+D:\git\test\6_4\6_4\test.c(21,9): warning C4477: “scanf”: 格式字符串“%lf”需要类型“double *”的参数，但可变参数 1 拥有了类型“Book *”
+  6_4.vcxproj -> D:\git\test\6_4\Debug\6_4.exe
