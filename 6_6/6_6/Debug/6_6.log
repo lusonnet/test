@@ -1,0 +1,4 @@
+﻿  test.c
+D:\git\test\6_6\6_6\test.c(132,16): warning C4013: “strlen”未定义；假设外部返回 int
+D:\git\test\6_6\6_6\test.c(142,13): warning C4013: “strcmp”未定义；假设外部返回 int
+  6_6.vcxproj -> D:\git\test\6_6\Debug\6_6.exe
