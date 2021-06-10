@@ -1,3 +1,2 @@
 ﻿  test.c
-D:\git\test\6_9\6_9\test.c(99,13): warning C4090: “return”: 不同的“const”限定符
   6_9.vcxproj -> D:\git\test\6_9\Debug\6_9.exe
