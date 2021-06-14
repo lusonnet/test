@@ -1,0 +1,5 @@
+﻿  test.c
+D:\git\test\6_14\6_14\test.c(268,20): error C2057: 应输入常量表达式
+D:\git\test\6_14\6_14\test.c(268,20): error C2466: 不能分配常量大小为 0 的数组
+D:\git\test\6_14\6_14\test.c(268,21): error C2133: “s”: 未知的大小
+D:\git\test\6_14\6_14\test.c(271,9): warning C4477: “scanf”: 格式字符串“%d”需要类型“int *”的参数，但可变参数 3 拥有了类型“int”
