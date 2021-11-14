@@ -1,68 +1,106 @@
 #include<stdio.h>
-#include<malloc.h>
+#define MAX 30 
 
-struct node{
-	int number;
+typedef struct Qnodee{
 	int data;
-	struct node *next;
-}; 
+	struct Qnodee* next;
+}Qnodee,*QueueePtr;
 
-int main(){
-	int n,m,k;
-	int i;
-	int a[100];//纪录答案 
-	int count = 0;
-	struct node *head,*p,*q,*tail;
-	
-	head = (struct node*)malloc(sizeof(struct node));//创建头结点
-	head->next = NULL;
-	
-		scanf("%d %d",&n,&m);
-		getchar();
-		tail = head;
-		for(i=0;i<n;i++)
-		{
+typedef struct
+{
+    int a[MAX];
+    QueueePtr froont;
+    QueueePtr rearr;
+}Queuee;
 
-			p = (struct node*)malloc(sizeof(struct node));
-			p->data = i+1;//纪录序号		
-			scanf("%d",&p->number);				
-			tail->next = p;
-			
-			p->next = head->next;//形成循环链表 
-			tail = p; 
-		}
-		p = head->next;
-		q = tail;
-		i = 1;
-		while(n)
-		{
-			if(i==m)//出列 
-			{
-				a[count] = p->data;
-				count++;
-				q->next = q->next->next;	
-				free(p);
-				p = q->next;
-				i = 1; 
-				m = p -> number;
-			}
-			else
-			{
-				q = p;
-				p = p->next;
-				i++;
-			}
-		
-			n--;
-		} 
-	free(p);
-	head->next = NULL;
-		
-	
-	for(i=0;i<count;i++)
+
+void InitQueuee(Queuee *Q)
+{
+    Q->froont = Q->rearr = 0;
+}
+
+int QueueeEmpty(Queuee *Q)
+{
+    return (Q->froont == Q->rearr) ?1:0;
+}
+
+int QueueeIn(Queuee *Q,int x)
+{
+    if(((Q->rearr+1)%MAX)==Q->froont)
+        return -1;
+    Q->a[Q->rearr] = x;
+    Q->rearr = (Q->rearr+1)%MAX;
+    return 1;
+}
+
+int QueueeOut(Queuee *Q,int *x)
+{
+    if(Q->froont == Q->rearr)
+		return -1;
+	*x = Q->a[Q->froont];
+	Q->froont = (Q->froont+1)%MAX;
+	return 1;
+	 
+}
+
+int GetQueuee(Queuee *Q)
+{
+    return Q->a[Q->froont];
+}
+
+void OutPut(Queuee Q)
+{
+	QueueePtr q;
+	q = Q.front->next;
+	while(q)
 	{
-		printf("%d ",&a[i]);
+		printf("%d ",q->data);
+		q = q->next;
 	}
-	free(head);
-	return 0;
+	printf("\n");
+}
+
+int main()
+{
+	int tmpp,n,x;
+    scanf("%d",&n);
+    if(n==1)
+    	printf("1");
+    else
+    {
+    	Queuee Q1;
+    	printf("1\n");
+    	printf("1 1\n");
+    	InitQueuee(&Q1);
+    	for(int i = 0;i < 2;i++)
+    	{
+    		QueueeIn(&Q1,1);
+    	}
+    	for(int i = 0;i < n - 2;i++)
+    	{
+    		Queuee Q2;
+    		InitQueuee(&Q2);
+    		QueueeIn(&Q2,1);
+    		while(!QueueeEmpty(&Q1))
+    		{	
+    			QueueeOut(&Q1,&x);
+    			if(QueueeEmpty(&Q1))
+    				QueueeIn(&Q2,1);
+				else
+				{
+					int ret = GetQueuee(&Q1);
+					QueueeIn(&Q2,x+ret); 
+				}
+				
+					
+    		}
+    		Q1=Q2;
+    		
+		}
+			
+		
+    
+    	
+	}
+    
 }
